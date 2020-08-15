@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTopDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".50" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <TextView
+        android:id="@+id/playerElementTextView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle_button_blue"
+        android:tag="player"
+        android:text="+"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineTopDescription"
+        app:layout_constraintVertical_bias=".5" />
+
+    <TextView
+        android:id="@+id/playerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(you)"
+        android:textColor="#FF00BCD4"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineTopDescription"
+        app:layout_constraintVertical_bias=".5" />
+
+    <TextView
+        android:id="@+id/vsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VS"
+        android:textColor="#4CAF50"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline6"
+        app:layout_constraintVertical_bias=".5" />
+
+    <TextView
+        android:id="@+id/cpuElementTextView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@drawable/circle_button_purple"
+        android:tag="cpu"
+        android:text="😈"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline7"
+        app:layout_constraintVertical_bias=".5" />
+
+    <TextView
+        android:id="@+id/cpuTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(computer)"
+        android:textColor="#9C27B0"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline7"
+        app:layout_constraintVertical_bias=".5" />
+
+    <TextView
+        android:id="@+id/difficultyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select difficulty level:"
+        android:textColor="#4CAF50"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@id/guideline11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline8"
+        app:layout_constraintVertical_bias=".5" />
+
+    <Button
+        android:id="@+id/singleDigitButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rounded_button_blue"
+        android:text="Single Digit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="goToActivity3"
+        android:tag="single"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline11"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <Button
+        android:id="@+id/doubleDigitButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rounded_button_blue"
+        android:text="Double Digit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:onClick="goToActivity3"
+        android:tag="double"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline11"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/tripleDigitButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@drawable/rounded_button_blue"
+        android:text="Triple Digit"
+        android:textStyle="bold"
+        android:onClick="goToActivity3"
+        android:tag="triple"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline11"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:background="@drawable/back_button"
+        android:tag="single"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:onClick="goBackToActivity1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline11"
+        app:layout_constraintVertical_bias="0.8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
